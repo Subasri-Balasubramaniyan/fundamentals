@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Semantic HTML5 Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header with Navigation -->
+  <header role="banner">
+    <h1>🌿 NatureScape</h1>
+    <nav role="navigation" aria-label="Main Navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Section 1: About -->
+  <section id="about" role="region" aria-labelledby="about-title">
+    <h2 id="about-title">About</h2>
+    <article>
+      <p>
+        This website demonstrates the use of semantic HTML5 elements, accessible
+        forms, and embedded multimedia. All content is structured with meaning
+        and accessibility in mind.
+      </p>
+    </article>
+  </section>
+
+  <!-- Section 2: Gallery -->
+  <section id="gallery" role="region" aria-labelledby="gallery-title">
+    <h2 id="gallery-title">Gallery</h2>
+    <div class="gallery-flex">
+      <!-- Image 1 -->
+      <figure>
+        <img src="./nature.jpg" alt="Scenic forest landscape" />
+        <figcaption>A beautiful forest view.</figcaption>
+         <video controls>
+          <source src="./naturevdo.mov" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Relax with a short nature video.</figcaption>
+        <audio controls>
+          <source src="./nature-sound.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <figcaption>Peaceful nature sounds.</figcaption>
+      </figure>
+
+      <!-- Image 2 -->
+      <figure>
+        <img src="./snow.jpg" alt="Snowy mountain" />
+        <figcaption>Snow-covered majestic mountains.</figcaption>
+         <video controls>
+          <source src="./naturevdo.mov" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Relax with a short nature video.</figcaption>
+        <audio controls>
+          <source src="./nature-sound.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <figcaption>Peaceful nature sounds.</figcaption>
+      </figure>
+
+      <!-- Image 3 -->
+      <figure>
+        <img src="./flow.jpg" alt="Flowing river" />
+        <figcaption>A peaceful flowing river.</figcaption>
+         <video controls>
+          <source src="./naturevdo.mov" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Relax with a short nature video.</figcaption>
+        <audio controls>
+          <source src="./nature-sound.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <figcaption>Peaceful nature sounds.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Section 3: Contact -->
+  <section id="contact" role="form" aria-labelledby="contact-title">
+    <h2 id="contact-title">Contact Us</h2>
+    <form action="#" method="post">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" minlength="6" required />
+
+      <label for="reason">Reason for Contact:</label>
+      <select id="reason" name="reason" required>
+        <option value="">--Select--</option>
+        <option value="support">Support</option>
+        <option value="feedback">Feedback</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label>
+        <input type="checkbox" name="subscribe" />
+        Subscribe to our newsletter
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <p>&copy; 2025 My Semantic Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>

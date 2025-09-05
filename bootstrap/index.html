@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nature Scenery Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="icomoon/style.css">
+</head>
+<body class="bg-light">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#"><i class="fa-solid fa-seedling"></i> 
+<i class="fa-solid fa-spa"></i>   <!-- lotus-style flower -->
+</i>🌿 NatureScape</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <a class="nav-link" href="#home"><i class="fa-solid fa-house"></i> Home</a>
+          <a class="nav-link" href="#gallery"><i class="fa-solid fa-tree"></i> Nature</a>
+          <a class="nav-link" href="#contact"><i class="fa-solid fa-phone"></i> Contact</a>
+
+           <a class="nav-link" href="https://www.google.com/search?q=exploring+natural+scenery&oq=explo&gs_lcrp=EgZjaHJvbWUqBggBECMYJzIUCAAQABhDGEYY-QEYsQMYgAQYigUyBggBECMYJzIGCAIQRRg5Mg8IAxAAGEMYsQMYgAQYigUyDwgEEAAYQxixAxiABBiKBTIMCAUQABhDGIAEGIoFMgoIBhAAGLEDGIAEMgcIBxAAGIAEMgoICBAAGLEDGIAEMgoICRAAGLEDGIAE0gEJNDY2N2owajE1qAIIsAIB8QUxrnX7eLtZAw&sourceid=chrome&ie=UTF-8"><i class="fa-solid fa-leaf"></i> Explore</button>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="text-center py-5 bg-secondary text-white">
+    <div class="container">
+      <h1 class="display-4 fw-bold"> 
+<i class="fa-solid fa-spa"></i> Welcome to NatureScape <i class="fa-solid fa-spa"></i></h1>
+      <p class="lead">Experience the beauty of natural landscapes 🌳</p>
+      <a href="https://www.google.com/search?q=exploring+natural+scenery&oq=exploring+natural+scenery&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yCAgCEAAYFhgeMggIAxAAGBYYHjIICAQQABgWGB4yDQgFEAAYhgMYgAQYigUyDQgGEAAYhgMYgAQYigUyDQgHEAAYhgMYgAQYigUyDQgIEAAYhgMYgAQYigUyCggJEAAYgAQYogTSAQoxMjQwOWowajE1qAIIsAIB8QXalgvbCm1F7A&sourceid=chrome&ie=UTF-8" class="btn btn-light btn-lg"><i class="fas fa-globe"></i>  Explore</a>
+    </div>
+  </header>
+
+  <!-- Cards Section -->
+  <section id="gallery" class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="./images/forest.jpg" class="card-img-top" alt="Forest">
+            <div class="card-body">
+              <h5 class="card-title text-primary"><i class="fa-solid fa-tree"></i>Lush Forests</h5>
+              <p class="card-text">Breathe in the freshness of evergreen forests and reconnect with nature.</p>
+              <a href="https://www.google.com/search?q=lush+forests&oq=lush+forests&gs_lcrp=EgZjaHJvbWUyDggAEEUYORhDGIAEGIoFMg4IARAAGAoYQxiABBiKBTIJCAIQABgKGIAEMgkIAxAAGAoYgAQyCQgEEAAYChiABDIJCAUQABgKGIAEMgkIBhAAGAoYgAQyCQgHEAAYChiABDIJCAgQABgKGIAEMgkICRAAGAoYgATSAQkzNzAyajBqMTWoAgiwAgHxBacjtKtF-qwy&sourceid=chrome&ie=UTF-8" class="btn btn-primary"><i class="fas fa-search-plus"></i> Discover</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="./images/mountains.jpg" class="card-img-top" alt="Mountains">
+            <div class="card-body">
+              <h5 class="card-title text-primary"> <i class="fa-solid fa-mountain"></i>
+Majestic Mountains</h5>
+              <p class="card-text">Explore breathtaking mountain ranges and witness stunning sunsets.</p>
+              <a href="https://www.google.com/search?q=majestic+mountains&sca_esv=a73863e0cea19cfd&sxsrf=AE3TifP0PnigvYxMH5xwNdXch9l_ljvZzg%3A1756768891604&ei=eyq2aIzdJMqwwcsPj57cyAI&ved=0ahUKEwjMhvKN2riPAxVKWHADHQ8PFykQ4dUDCBA&uact=5&oq=majestic+mountains&gs_lp=Egxnd3Mtd2l6LXNlcnAiEm1hamVzdGljIG1vdW50YWluczILEAAYgAQYkQIYigUyBRAAGIAEMgUQABiABDILEC4YgAQYxwEYrwEyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIsTJQ9wNYmC9wAngBkAEEmAGAAqAB5yGqAQYwLjE1Lji4AQPIAQD4AQGYAhWgAvAeqAISwgIKEAAYsAMY1gQYR8ICDRAuGIAEGLADGEMYigXCAgoQIxiABBgnGIoFwgIKEAAYgAQYFBiHAsICChAAGIAEGEMYigXCAgcQIxgnGOoCwgINEC4Y0QMYxwEYJxjqAsICDRAjGPAFGCcYyQIY6gLCAhMQLhiABBhDGLQCGIoFGOoC2AEBwgIVEAAYgAQYQxi0AhiKBRjqAhgK2AEBwgIUEAAYgAQY4wQYtAIY6QQY6gLYAQHCAhAQIxjwBRiABBgnGMkCGIoFwgILEAAYgAQYsQMYgwHCAg4QLhiABBixAxjRAxjHAcICCBAAGIAEGLEDwgIFEC4YgATCAgoQIxjwBRgnGMkCwgIKEC4YgAQYQxiKBcICDRAAGIAEGLEDGEMYigXCAhAQLhiABBixAxhDGIMBGIoFwgIQEAAYgAQYsQMYQxjJAxiKBcICFhAuGIAEGEMYxwEYmAUYmQUYigUYrwHCAgsQABiABBiSAxiKBcICDhAuGIAEGMcBGJgFGK8BmAMU8QU01K_L7mB2B4gGAZAGCboGBggBEAEYAZIHBjIuMTAuOaAHj6UCsgcGMC4xMC45uAfJHsIHCDItMy4xNy4xyAfnAQ&sclient=gws-wiz-serp" class="btn btn-primary"><i class="fas fa-search-plus"></i>  Discover</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="./images/rivers.jpg" class="card-img-top" alt="River">
+            <div class="card-body">
+              <h5 class="card-title text-primary"> <i class="fa-solid fa-water"></i>
+Calm Rivers</h5>
+              <p class="card-text">Relax by the serene riversides and let the flowing water soothe your soul.</p>
+              <a href="https://www.google.com/search?q=calm+rivers&sca_esv=a73863e0cea19cfd&sxsrf=AE3TifNGlxKCe_GdpL23TLMr4nPpIUP8oQ%3A1756768936109&ei=qCq2aNS8BuzhseMP_8utiAg&ved=0ahUKEwjUsI6j2riPAxXscGwGHf9lC4EQ4dUDCBA&uact=5&oq=calm+rivers&gs_lp=Egxnd3Mtd2l6LXNlcnAiC2NhbG0gcml2ZXJzMgsQABiABBiRAhiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDILEC4YgAQYxwEYrwEyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yCxAAGIAEGIYDGIoFMggQABiABBiiBEiJNFCbAVjKMHAEeAGQAQSYAaUCoAHBHaoBBjAuOC4xMLgBA8gBAPgBAZgCEqAC8heoAhTCAgoQABiwAxjWBBhHwgINEAAYgAQYsAMYQxiKBcICChAjGIAEGCcYigXCAgoQABiABBhDGIoFwgIOEC4YgAQYxwEYmAUYrwHCAgcQIxgnGOoCwgINEC4Y0QMYxwEYJxjqAsICExAAGIAEGEMYtAIYigUY6gLYAQHCAgoQIxjwBRgnGMkCwgIQECMY8AUYgAQYJxjJAhiKBcICFhAuGIAEGLEDGNEDGEMYgwEYxwEYigXCAgsQABiABBixAxiDAcICCBAAGIAEGLEDwgIKEC4YgAQYJxiKBcICChAuGIAEGEMYigXCAggQLhiABBixA8ICChAuGIAEGLEDGArCAg0QABiABBixAxiDARgKwgIHEAAYgAQYCsICCxAuGIAEGJECGIoFwgIQEC4YgAQYQxjHARiKBRivAcICExAuGIAEGLEDGNEDGEMYxwEYigXCAhoQLhiABBiRAhiKBRiXBRjcBBjeBBjgBNgBAcICChAAGIAEGBQYhwLCAgsQLhiABBjRAxjHAZgDDPEFwCWvCfUTYwKIBgGQBgq6BgYIARABGAGSBwc0LjUuOC4xoAfZxwGyBwcwLjUuOC4xuAfAF8IHBjItNS4xM8gHqgE&sclient=gws-wiz-serp" class="btn btn-primary"><i class="fas fa-search-plus"></i>  Discover</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center text-primary mb-4"><i class="fa-solid fa-envelope"></i> Contact Us</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form id="contactForm" class="p-4 shadow rounded bg-white">
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" class="form-control" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+          </div>
+        </form>
+
+        <!-- Success Alert (hidden by default) -->
+        <div id="successAlert" class="alert alert-success mt-3 d-none" role="alert">
+          ✅ Sent successfully!
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- Footer -->
+  <footer class="text-center py-4 bg-primary text-white">
+    <p class="mb-0">© 2025 NatureScape | Made with ❤️</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

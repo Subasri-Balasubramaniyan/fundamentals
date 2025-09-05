@@ -1,0 +1,192 @@
+// ==========================
+// Variables
+// ==========================
+@use "sass:color";
+$primary-color: #2c3e50;
+$secondary-color: #3498db;
+$accent-color: #e74c3c;
+$light-color: #ecf0f1;
+$font-stack: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+// ==========================
+// Mixins
+// ==========================
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin responsive-text($small, $medium, $large) {
+  font-size: $small;
+  @media (min-width: 768px) {
+    font-size: $medium;
+  }
+  @media (min-width: 1024px) {
+    font-size: $large;
+  }
+}
+
+// ==========================
+// Global Styles
+// ==========================
+body {
+  margin: 0;
+  font-family: $font-stack;
+  background: $light-color;
+  color: $primary-color;
+  animation: fadeIn 1.2s ease-in;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  color: $secondary-color;
+  @include responsive-text(1.5rem, 2rem, 2.5rem);
+  font-weight: 700;
+}
+
+// ==========================
+// Header
+// ==========================
+header {
+  background: linear-gradient(135deg, $primary-color, color.adjust($primary-color, $lightness: -10%));
+  color: $light-color;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+  nav {
+    @include flex-center;
+    flex-wrap: wrap;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1.5rem;
+
+      li a {
+        color: $light-color;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s, transform 0.2s;
+
+        &:hover {
+          color: $accent-color;
+          transform: translateY(-2px);
+        }
+      }
+    }
+  }
+}
+
+// ==========================
+// Content Sections
+// ==========================
+section {
+  padding: 2rem;
+
+  article {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: $primary-color;
+    }
+  }
+}
+
+#gallery {
+  display: grid;
+  gap: 1.5rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  img {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 100%;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+// ==========================
+// Form
+// ==========================
+form {
+  display: grid;
+  gap: 1rem;
+  max-width: 400px;
+
+  label {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+  }
+
+  input, select, button {
+    padding: 0.7rem;
+    border: 1px solid $primary-color;
+    border-radius: 8px;
+    font-family: inherit;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+
+  input:focus, select:focus {
+    outline: none;
+    border-color: $secondary-color;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+  }
+
+  button {
+    background: $secondary-color;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+
+    &:hover {
+      background: color.adjust($secondary-color, $lightness: -10%);
+      transform: translateY(-2px);
+    }
+  }
+}
+
+// ==========================
+// Footer
+// ==========================
+footer {
+  background: linear-gradient(135deg, $primary-color, color.adjust($primary-color, $lightness: -15%));
+  color: $light-color;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+// ==========================
+// Animations
+// ==========================
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

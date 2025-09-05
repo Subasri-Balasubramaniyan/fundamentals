@@ -1,0 +1,9 @@
+// Override Bootstrap default colors with natural theme
+$primary: #2e7d32;   // Forest Green
+$secondary: #8d6e63; // Earth Brown
+$info:green;      // Green
+$light: #f1f8e9;     // Light green background
+$dark: #2e2e2e;      // Charcoal
+
+// Import Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";

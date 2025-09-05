@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f7f9;
+  color: #2c3e50;
+  animation: fadeIn 1.2s ease-in;
+  line-height: 1.6;
+}
+
+/* Headings */
+h1, h2 {
+  color: #3498db;
+  text-align: center;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  color: #ecf0f1;
+  padding: 1.2rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+header nav ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.3s;
+}
+header nav ul li a:hover {
+  color: #1abc9c;
+  transform: translateY(-2px);
+}
+
+/* Sections & Articles */
+section {
+  padding: 2rem;
+}
+section article {
+  background: white;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+section article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Gallery Flexbox */
+.gallery-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.gallery-flex figure {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 320px;
+  flex: 1 1 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gallery-flex figure:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.gallery-flex img,
+.gallery-flex video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Forms */
+form {
+  display: grid;
+  gap: 1rem;
+  max-width: 420px;
+  margin: auto;
+}
+form input, form select, form button {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+}
+form input:focus, form select:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+  outline: none;
+}
+form button {
+  background: #3498db;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+form button:hover {
+  background: #2980b9;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  color: #ecf0f1;
+  text-align: center;
+  padding: 1.2rem;
+  margin-top: 2rem;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
